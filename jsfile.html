@@ -10,13 +10,16 @@
         }
     </style> -->
 </head>
-<body bgcolor="grey">
+<body bgcolor="#236e91">
 
     <!-- <p id="demo"></p>
     <p id="demo1"></p> -->
     <!-- <p id="demo2"></p> -->
     <!-- <p id="demo3"></p> -->
-    <p id="demo4"></p>
+    <!-- <h1 id="demo4"></h1>
+    <h1 id="demo5"></h1>
+    <h1 id="demo6"></h1> -->
+    <h1 id="demo7"></h1>
      
 
     <!-- <script>
@@ -103,8 +106,73 @@
         // movies.pop();
         // console.log(movies);
 
-        const movies=["Intersteller","Tenet","Batman Begins","The Dark Knight"]
-        document.getElementById("demo4").innerHTML=movies.join("-");
+        // const movies=["Intersteller","Tenet","Batman Begins","The Dark Knight"]
+        // document.getElementById("demo4").innerHTML=movies.join("-");
+        // document.getElementById("demo5").innerHTML=movies.join("");
+        // document.getElementById("demo6").innerHTML=movies.join(",");
+
+ let time = new Date().getHours();
+    let greeting;
+//     if (time < 12) {
+//   greeting = "Good Morning";
+// } else if (time < 18) {
+//     greeting = "Good Afternoon"; 
+//     } else {
+//     greeting = "Good Night";
+//     }
+//     document.getElementById("demo7").innerHTML=greeting
+
+// switch(time){
+//     case 1: if (time < 12) {
+//             greeting = "Good Morning";
+//             document.getElementById("demo7").innerHTML=greeting;
+//             break;
+//             }
+//     case 2: if (time < 18) {
+//             greeting = "Good Afternoon";
+//             document.getElementById("demo7").innerHTML=greeting;
+//             }
+//             break;
+//     case 3:  if (time < 24) {
+//             greeting = "Good Night";}
+//                 document.getElementById("demo7").innerHTML=greeting;
+//                 break;
+
+//     default: greeting = "Invalid";
+//                 document.getElementById("demo7").innerHTML=greeting;
+
+//     }
+
+let day;
+    switch(new Date().getDay()){
+        case 0:
+            day="Sunday";
+            break;
+        case 1:
+            day="Monday";
+            break;
+        case 2:
+            day="Tuesday";
+            break;
+        case 3:
+            day="Wednesday";
+            break;
+        case 4:
+            day="Thursday";
+            break;
+        case 5:
+            day="Friday";
+            break;
+        case 6:
+            day="Saturday";
+            break;
+    }
+    document.getElementById("demo7").innerHTML=day;
+
+
+
+   
+
 
         
     </script>
