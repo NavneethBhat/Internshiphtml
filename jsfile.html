@@ -21,6 +21,8 @@
     <h1 id="demo6"></h1> -->
     <h1 id="demo7"></h1>
 
+
+    <!-- Replace Function With -->
     <button onclick="myf()">Replace</button>
     <p id="demo8">Please Visit Mudbidri</p>
      
@@ -114,8 +116,8 @@
         // document.getElementById("demo5").innerHTML=movies.join("");
         // document.getElementById("demo6").innerHTML=movies.join(",");
 
- let time = new Date().getHours();
-    let greeting;
+//  let time = new Date().getHours();
+//     let greeting;
 //     if (time < 12) {
 //   greeting = "Good Morning";
 // } else if (time < 18) {
@@ -146,31 +148,31 @@
 
 //     }
 
-let day;
-    switch(new Date().getDay()){
-        case 0:
-            day="Sunday";
-            break;
-        case 1:
-            day="Monday";
-            break;
-        case 2:
-            day="Tuesday";
-            break;
-        case 3:
-            day="Wednesday";
-            break;
-        case 4:
-            day="Thursday";
-            break;
-        case 5:
-            day="Friday";
-            break;
-        case 6:
-            day="Saturday";
-            break;
-    }
-    document.getElementById("demo7").innerHTML=day;
+// let day;
+//     switch(new Date().getDay()){
+//         case 0:
+//             day="Sunday";
+//             break;
+//         case 1:
+//             day="Monday";
+//             break;
+//         case 2:
+//             day="Tuesday";
+//             break;
+//         case 3:
+//             day="Wednesday";
+//             break;
+//         case 4:
+//             day="Thursday";
+//             break;
+//         case 5:
+//             day="Friday";
+//             break;
+//         case 6:
+//             day="Saturday";
+//             break;
+//     }
+//     document.getElementById("demo7").innerHTML=day;
 
 
 
@@ -181,16 +183,45 @@ console.log(str.search("Hello"));
 
 console.log(str.search("W"));
 
-console.log(str.length());
 
 
 
+// Replace Fuction With Button
 function myf(){
     let text=document.getElementById("demo8").innerHTML;
     document.getElementById("demo8").innerHTML=text.replace("Mudbidri","Accerlab");
 }
 
-    </script>
+
+try{
+    aler("Hello Guys")
+}
+catch(error){
+    console.log(error);
+}
+
+//arrow function
+const myfunc=()=>{
+    console.log("Good Morning");
+};
+myfunc();
+
+let array1=["Black Ops","Tsushima","Uncharted4","GTA5"];
+array1.map((item)=>console.log(item));
+
+// Destructuring in array
+const array2=["Black Ops","Tsushima","Uncharted4","GTA5"];
+let [a,b,c,d]=array2;
+console.log(a,b,c,d);
+
+
+const games={game:"Tsushima",company:"Suker-Punch"};
+let {game,company}=games;
+console.log(game,company);
+
+
+
+</script>
    
 </body>
 </html>
