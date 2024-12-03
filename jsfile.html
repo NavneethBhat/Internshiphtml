@@ -206,20 +206,44 @@ const myfunc=()=>{
 };
 myfunc();
 
+
+// Mapping
 let array1=["Black Ops","Tsushima","Uncharted4","GTA5"];
 array1.map((item)=>console.log(item));
 
 // Destructuring in array
-const array2=["Black Ops","Tsushima","Uncharted4","GTA5"];
-let [a,b,c,d]=array2;
-console.log(a,b,c,d);
+// const array2=["Black Ops","Tsushima","Uncharted4","GTA5"];
+// let [a,b,c,d]=array2;
+// console.log(a,b,c,d);
 
 
-const games={game:"Tsushima",company:"Suker-Punch"};
-let {game,company}=games;
-console.log(game,company);
+// Destructuring in object
+// const games={game:"Tsushima",company:"Suker-Punch"};
+// let {game,company}=games;
+// console.log(game,company);
 
 
+// Destructuring in array and adding another variable
+// const array2=["Black Ops","Tsushima","Uncharted4","GTA5"];
+// let [a,b,c,d,e="COD"]=array2;
+// console.log(a,b,c,d,e);
+
+
+// Spread Operator
+const num1=[1,2,3,4,5];
+const num2=[6,7,8,9,10];
+const numcomb=[...num1,...num2]
+console.log(numcomb)
+
+// Spraed Operator with rest
+const num=[1,2,3,4,5,6];
+    const[one,two,...rest]=num;
+    console.log(one,two,rest);
+
+
+// Ternary
+let x=10;
+x===11 ? console.log("Match") : console.log("Not Match");
 
 </script>
    
