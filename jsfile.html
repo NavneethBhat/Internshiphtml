@@ -20,6 +20,9 @@
     <h1 id="demo5"></h1>
     <h1 id="demo6"></h1> -->
     <h1 id="demo7"></h1>
+
+    <button onclick="myf()">Replace</button>
+    <p id="demo8">Please Visit Mudbidri</p>
      
 
     <!-- <script>
@@ -170,6 +173,22 @@ let day;
     document.getElementById("demo7").innerHTML=day;
 
 
+
+let str="  Hello World!"
+
+console.log(str)
+console.log(str.search("Hello"));
+
+console.log(str.search("W"));
+
+console.log(str.length());
+
+
+
+function myf(){
+    let text=document.getElementById("demo8").innerHTML;
+    document.getElementById("demo8").innerHTML=text.replace("Mudbidri","Accerlab");
+}
 
     </script>
    
